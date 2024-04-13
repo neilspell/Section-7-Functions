@@ -51,7 +51,7 @@ return passed
 
 6. Using the sample code above, complete the `unitTest()` function.
 
-💡Note: Dont forget to call your `unitTest` function in your main program body and display the value of `passed`.
+💡**Note:** Dont forget to call your `unitTest` function in your main program body and display the value of `passed`.
 
 ````py
 print("Test passed: ", unitTest() )
@@ -59,5 +59,49 @@ print("Test passed: ", unitTest() )
 
 
 ### Multiple Test Cases 📝
+We will now look at automating the unit test for multiple test cases.
 
+This time we will test a function called `largerNumber()`, which requires 2 arguments and returns teh larger of teh 2 numbers. This function uses logic, meaning their is more scope / possibility for errors than in the previous example.
+
+### Make Task 👨🏽‍💻
+Create a function called `largerNumber()` that will return the larger of 2 numbers.
+
+<details>
+
+  <summary>👀No peeking</summary>
+  
+````py
+def largerNumber(num1, num2):
+  if num1 > num2:
+    return num1
+  else:
+    return num2
+
+````
+
+</details>
+
+1. Let's create 2 lists of values to be tested
+
+````py
+checkList_1 = [1, 2, 3, 4, 5]
+checkList_2 = [1, 1, 4, -1, 100]
+
+````
+💡**Note:** The range of values to be tested goes from `-1` to `100`. Each item in `checkList_1` is greater than, less than or equal to the corresponding item in `checkList_2`.
+
+2. Now, using a `for` loop, loop through each corresponding item in both lists, passing them into your `largerNumber()` function as arguments.
+
+   The returned value from the function is stored as a variable named `testAns`.
+
+3. While still in the loop, check that the value returned from `largerNumber()` matches the expected value.
+
+<details>
+
+  <summary>👀Hint:</summary>
+  
+Use a variable called `fails` as a counter to keep track of the number of test cases that fail (if any).
+
+</details>
+ 
 
