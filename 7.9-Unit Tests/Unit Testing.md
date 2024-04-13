@@ -43,3 +43,21 @@ passed = True
 if expectedVal != testAns:
   passed = False
 ````
+
+5. Finally, the value in `passed` is returned to the main program body using
+````py
+return passed
+````
+
+6. Using the sample code above, complete the `unitTest()` function.
+
+💡Note: Dont forget to call your `unitTest` function in your main program body and display the value of `passed`.
+
+````py
+print("Test passed: ", unitTest() )
+````
+
+
+### Multiple Test Cases 📝
+
+
