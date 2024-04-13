@@ -63,7 +63,7 @@ We will now look at automating the unit test for multiple test cases.
 
 This time we will test a function called `largerNumber()`, which requires 2 arguments and returns teh larger of teh 2 numbers. This function uses logic, meaning their is more scope / possibility for errors than in the previous example.
 
-### Make Task 👨🏽‍💻
+#### Make Task 👨🏽‍💻
 Create a function called `largerNumber()` that will return the larger of 2 numbers.
 
 <details>
@@ -100,8 +100,30 @@ checkList_2 = [1, 1, 4, -1, 100]
 
   <summary>👀Hint:</summary>
   
-Use a variable called `fails` as a counter to keep track of the number of test cases that fail (if any).
+  Use a variable called `fails` as a counter to keep track of the number of test cases that fail (if any).
 
 </details>
  
+4. Finally, the value of `fails` is returned to the main program body
 
+````py
+return fails
+````
+
+5. Your completed `unitTest` function should perform multiple tests and record the number of failures.
+
+If the value of `fails = 0`, then all unit tests passed. 
+
+💡**Note:** Again, don't forget to call your `unitTest` function in your main program body and display the value of `fails`.
+
+````py
+print("Total tests fails: ", unitTest() )
+````
+
+### ✨Benefits of unit testing
+Compared to manual testing or not testing your code at all 😲, unit testing has many benefits:
+- It's fast.
+- It allows bugs 🐛 to be identified easily.
+- Enables members of a team to check each other's code.
+- Provides documentation.
+- Confirms that code works as intended.
