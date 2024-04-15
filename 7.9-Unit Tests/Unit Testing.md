@@ -16,7 +16,7 @@ def volCylinder(radius, height):
   volume=3.14 * (radius**2) * height
   return volume
 ````
-1. As the function to be tested `volCylinder(radius, height)` has 2 **arguments**, we need to create 2 variables with smaple values to be tested.
+1. As the function to be tested `volCylinder(radius, height)` has 2 **arguments**, we need to create 2 variables with sample values to be tested.
 
 ````py
 testR = 2
@@ -61,7 +61,7 @@ print("Test passed: ", unitTest() )
 ### Multiple Test Cases 📝
 We will now look at automating the unit test for multiple test cases.
 
-This time we will test a function called `largerNumber()`, which requires 2 arguments and returns teh larger of teh 2 numbers. This function uses logic, meaning their is more scope / possibility for errors than in the previous example.
+This time we will test a function called `largerNumber()`, which requires 2 arguments and returns the larger of the 2 numbers. This function uses logic, meaning their is more scope / possibility for errors than in the previous example.
 
 #### Make Task 👨🏽‍💻
 Create a function called `largerNumber()` that will return the larger of 2 numbers.
@@ -110,7 +110,7 @@ checkList_2 = [1, 1, 4, -1, 100]
 return fails
 ````
 
-5. Your completed `unitTest` function should perform multiple tests and record the number of failures.
+5. Your completed `unitTest()` function should perform multiple tests and record the number of failures.
 
 If the value of `fails = 0`, then all unit tests passed. 
 
